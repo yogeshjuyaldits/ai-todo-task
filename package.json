@@ -1,26 +1,32 @@
 {
   "name": "ai-todo-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "A command-line AI assistant that manages todos using OpenAI and PostgreSQL. Users interact via the command prompt, and the assistant processes commands to manage tasks.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node todo.js",
-    "build":"npx tsc"
+    "start": "node todo.js",
+    "dev": "node todo.ts",
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^13.1.0",
     "dotenv": "^16.4.7",
     "openai": "^4.84.0",
     "pg": "^8.13.3",
-    "readline-sync": "^1.4.10"
+    "pg-hstore": "^2.3.4",
+    "readline-sync": "^1.4.10",
+    "sequelize": "^6.37.5",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/node": "^22.13.2",
     "@types/pg": "^8.11.11",
     "@types/readline-sync": "^1.4.8",
+    "@types/sequelize": "^4.28.20",
     "typescript": "^5.7.3"
   }
 }
